@@ -19,6 +19,8 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
+        {/* TODO: Delete empty space in logo svg file */}
+        {/* TODO: Also remake favicon to be a red square with "Sup" or "Supa" in it */}
         <Link className="logo-container" to="/">
           <BrandLogo className="logo" />
         </Link>
@@ -39,7 +41,7 @@ const Navigation = () => {
           )}
           <CartIcon />
         </div>
-         {isCartOpen && <CartDropdown />}
+        {isCartOpen && <CartDropdown />}
       </div>
       <Outlet />
     </Fragment>
